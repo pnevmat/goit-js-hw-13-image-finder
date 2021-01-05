@@ -1,0 +1,31 @@
+.photo-list-item {
+    width: 100%;
+    max-width: 250px;
+}
+
+.photo-card {
+    width: 100%;
+    max-width: 250px;
+}
+
+.card-image {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+}
+
+.stats {
+    width: 100%;
+}
+
+.stats-item {
+    width: 100%;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.material-icons {
+    width: 10px;
+    height: 10px;
+}
