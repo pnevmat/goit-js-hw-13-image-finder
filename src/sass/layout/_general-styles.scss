@@ -50,6 +50,7 @@ ul {
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
+    padding-top: 30px;
     background-color: teal;
     & :nth-child(-n + 8) {
         margin-bottom: 30px;
