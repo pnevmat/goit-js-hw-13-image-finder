@@ -14,7 +14,7 @@ const requestsHendler = {
             &orientation=${requestsHendler.orientation}&q=${query}&page=${page}
             &per_page=${requestsHendler.perPage}&key=${requestsHendler.key}`
         )
-        console.log(data);
+        
         return imagesRender.getImgArray(data);
     }
 };

@@ -4,7 +4,6 @@ import refs from './refs';
 const imagesRender = {
     getImgArray: async ({hits}) => {
         if (Number(localStorage.getItem('page')) === 1) {
-            console.dir(refs.imageListRef);
             refs.imageListRef.innerHTML = '';
         }
         
