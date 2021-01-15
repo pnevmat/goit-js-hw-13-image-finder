@@ -4,3 +4,8 @@
     max-width: 500px;
     height: 30px;
 }
+
+.button.is-hidden {
+    display: none;
+    pointer-events: none;
+}

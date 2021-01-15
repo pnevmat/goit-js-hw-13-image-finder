@@ -35,9 +35,7 @@ ul {
 .section {
     width: 100%;
     max-width: 1500px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 50px 30px;
     & :not(:last-child) {
         margin-bottom: 50px;
     }
@@ -55,7 +53,7 @@ ul {
     & :nth-child(-n + 8) {
         margin-bottom: 30px;
     }
-    & :nth-child(n + 8) {
+    & :nth-child(n + 9) {
         margin-bottom: 0;
     }
 }

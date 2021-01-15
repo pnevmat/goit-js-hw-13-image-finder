@@ -7,16 +7,17 @@ const imagesRender = {
             refs.imageListRef.innerHTML = '';
         }
         
-        const imgMarkup = await imagesTemplate(hits);
+        const imgMarkup = imagesTemplate(hits);
        
         return imagesRender.render(imgMarkup);
     },
     
     render: async (imgMarkup) => {
-        await refs.imageListRef.insertAdjacentHTML('beforeend', imgMarkup);
+        refs.imageListRef.insertAdjacentHTML('beforeend', imgMarkup);
         if (refs.buttonRef.disabled === true) {
 
             refs.buttonRef.disabled = false;
+            refs.buttonRef.classList.remove('is-hidden');
         }
 
         if (Number(localStorage.getItem('page')) === 1) {
