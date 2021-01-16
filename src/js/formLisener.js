@@ -3,18 +3,16 @@ import requestsHendler from './apiService';
 
 refs.buttonRef.disabled = true;
 
-refs.formRef.addEventListener('input', (event) => {
+refs.formRef.addEventListener('submit', (event) => {
     event.preventDefault();
     
-    if (event.target.value.length >= 3) {
-        setTimeout(() => {
-            localStorage.setItem('page', requestsHendler.page);
-            localStorage.removeItem('defScrollRange');
+    setTimeout(() => {
+        localStorage.setItem('page', requestsHendler.page);
+        localStorage.removeItem('defScrollRange');
     
-            const query = event.target.value;
-            const page = localStorage.getItem('page');
+        const query = event.target.children[0].value;
+        const page = localStorage.getItem('page');
     
-            requestsHendler.fetchImages(query, page);
-        }, 1000);
-    } else {return;};
+        requestsHendler.fetchImages(query, page);
+    }, 1000);
 })
